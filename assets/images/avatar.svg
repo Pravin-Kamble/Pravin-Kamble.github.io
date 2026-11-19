@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="avatarGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4f46e5" />
+      <stop offset="50%" stop-color="#7c3aed" />
+      <stop offset="100%" stop-color="#06b6d4" />
+    </linearGradient>
+    <linearGradient id="innerGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.1"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+  
+  <!-- Outer circle border with gradient -->
+  <circle cx="100" cy="100" r="96" fill="url(#avatarGrad)" />
+  <circle cx="100" cy="100" r="92" fill="#0f172a" />
+  
+  <!-- Stylized modern tech avatar silhouette -->
+  <g filter="url(#shadow)">
+    <!-- Body / Shoulders -->
+    <path d="M 40 170 C 40 135, 70 125, 100 125 C 130 125, 160 135, 160 170 C 145 185, 125 192, 100 192 C 75 192, 55 185, 40 170 Z" fill="url(#avatarGrad)" opacity="0.9" />
+    <!-- Head -->
+    <circle cx="100" cy="82" r="36" fill="#f8fafc" />
+    <!-- Hair / Accent -->
+    <path d="M 64 78 C 64 50, 80 44, 100 44 C 120 44, 136 50, 136 78 C 126 68, 114 62, 100 62 C 86 62, 74 68, 64 78 Z" fill="#1e293b" />
+    <!-- Glasses / Modern Developer Touch -->
+    <rect x="74" y="76" width="20" height="12" rx="4" fill="none" stroke="#4f46e5" stroke-width="3" />
+    <rect x="106" y="76" width="20" height="12" rx="4" fill="none" stroke="#4f46e5" stroke-width="3" />
+    <line x1="94" y1="82" x2="106" y2="82" stroke="#4f46e5" stroke-width="3" />
+    <!-- Smile -->
+    <path d="M 90 100 Q 100 108 110 100" fill="none" stroke="#64748b" stroke-width="2.5" stroke-linecap="round" />
+  </g>
+</svg>

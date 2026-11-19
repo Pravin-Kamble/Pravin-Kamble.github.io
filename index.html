@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pravin Kamble | Java Developer • DevOps Engineer • Cloud Architect</title>
+  <meta name="description" content="Portfolio and resume of Pravin Kamble — Java Full Stack Developer & DevOps Engineer with 4+ years of experience in Spring Boot, AWS, and Microservices.">
+  <meta name="keywords" content="Pravin Kamble, Java Developer, DevOps Engineer, AWS, Spring Boot, Microservices, VJTI, Mumbai, Portfolio">
+  <meta name="author" content="Pravin Kamble">
+
+  <!-- Open Graph / Social Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Pravin Kamble | Java Developer & DevOps Engineer">
+  <meta property="og:description" content="4+ years of experience building scalable enterprise financial applications, AWS cloud infrastructure, and CI/CD pipelines.">
+  <meta property="og:image" content="assets/images/project-2.svg">
+
+  <!-- Google Fonts Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/jpeg" href="assets/images/avatar.jpg">
+</head>
+<body>
+
+  <!-- MOBILE HEADER (Visible on screens <= 868px) -->
+  <header class="mobile-header" id="mobileHeader">
+    <div class="mobile-brand">
+      <img src="assets/images/avatar.jpg" onerror="this.onerror=null; this.src='assets/images/avatar.svg';" alt="Pravin Kamble" class="mobile-avatar">
+      <span class="mobile-title">Pravin Kamble</span>
+    </div>
+    <div class="mobile-controls">
+      <button class="theme-toggle-mobile" id="themeToggleMobile" aria-label="Toggle Dark/Light theme">
+        <!-- Sun Icon (for dark mode) -->
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none">
+          <circle cx="12" cy="12" r="5"></circle>
+          <line x1="12" y1="1" x2="12" y2="3"></line>
+          <line x1="12" y1="21" x2="12" y2="23"></line>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+          <line x1="1" y1="12" x2="3" y2="12"></line>
+          <line x1="21" y1="12" x2="23" y2="12"></line>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <!-- Moon Icon (for light mode) -->
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" style="display: none;">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+      </button>
+      <button class="menu-toggle-btn" id="menuToggleBtn" aria-label="Open Navigation Menu">
+        <svg viewBox="0 0 24 24" fill="none">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Backdrop -->
+  <div class="mobile-backdrop" id="mobileBackdrop"></div>
+
+  <!-- MAIN LAYOUT WRAPPER -->
+  <div class="layout-wrapper">
+
+    <!-- DESKTOP / DRAWER SIDEBAR -->
+    <aside class="sidebar" id="sidebar">
+      <!-- Profile Header -->
+      <div class="sidebar-profile">
+        <div class="avatar-wrapper">
+          <img src="assets/images/avatar.jpg" onerror="this.onerror=null; this.src='assets/images/avatar.svg';" alt="Pravin Kamble Avatar" class="avatar-img">
+          <span class="status-indicator" title="Open to opportunities"></span>
+        </div>
+        <h1 class="profile-name">Pravin Kamble</h1>
+        <p class="profile-role">Java Developer • DevOps • Cloud</p>
+        <div class="profile-location">
+          <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          <span>Mumbai, India</span>
+        </div>
+      </div>
+
+      <!-- Navigation Links -->
+      <nav class="sidebar-nav">
+        <ul class="nav-list">
+          <li>
+            <a href="#home" class="nav-link active">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+              <span>Home</span>
+            </a>
+          </li>
+          <li>
+            <a href="#about" class="nav-link">
+              <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+              <span>About</span>
+            </a>
+          </li>
+          <li>
+            <a href="#experience" class="nav-link">
+              <svg viewBox="0 0 24 24" fill="none"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+              <span>Experience</span>
+            </a>
+          </li>
+          <li>
+            <a href="#projects" class="nav-link">
+              <svg viewBox="0 0 24 24" fill="none"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+              <span>Projects</span>
+            </a>
+          </li>
+          <li>
+            <a href="#skills" class="nav-link">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+              <span>Skills</span>
+            </a>
+          </li>
+          <li>
+            <a href="#education" class="nav-link">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+              <span>Education</span>
+            </a>
+          </li>
+          <li>
+            <a href="#achievements" class="nav-link">
+              <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+              <span>Achievements</span>
+            </a>
+          </li>
+          <li>
+            <a href="#contact" class="nav-link">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <span>Contact</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Sidebar Quick Download CV Button -->
+      <div style="margin: 0.5rem 0 1rem;">
+        <a href="assets/JAVA_Dev_Pravin_Kamble_8286189486.pdf" target="_blank" rel="noopener noreferrer" download="JAVA_Dev_Pravin_Kamble_8286189486.pdf" class="btn btn-primary" style="width: 100%; font-size: 0.85rem; padding: 0.65rem 0.8rem; box-shadow: 0 4px 14px rgba(99, 102, 241, 0.3);">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          <span>Resume (PDF)</span>
+        </a>
+      </div>
+
+      <!-- Sidebar Footer Controls -->
+      <div class="sidebar-footer">
+        <!-- Social Icons -->
+        <div class="social-links">
+          <a href="https://linkedin.com/in/pravin-k-kamble" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          </a>
+          <a href="https://github.com/Pravin-Kamble" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub">
+            <svg viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+          </a>
+          <a href="mailto:pravinkamble704@gmail.com" class="social-btn" aria-label="Email">
+            <svg viewBox="0 0 24 24"><path d="M0 3v18h24v-18h-24zm21.518 2l-9.518 7.713-9.518-7.713h19.036zm-19.518 14v-11.817l9.518 7.713 9.518-7.713v11.817h-19.036z"/></svg>
+          </a>
+          <a href="tel:+918286189486" class="social-btn" aria-label="Phone">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          </a>
+        </div>
+
+        <!-- Dark / Light Mode Switcher -->
+        <div class="theme-toggle-wrapper">
+          <button class="theme-toggle-btn" id="themeToggleDesktop">
+            <svg class="icon-sun" viewBox="0 0 24 24" fill="none">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg class="icon-moon" viewBox="0 0 24 24" fill="none" style="display: none;">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+            <span id="themeText">Dark Mode</span>
+          </button>
+        </div>
+      </div>
+    </aside>
+
+    <!-- MAIN SCROLLABLE CONTENT -->
+    <main class="main-content">
+      <div class="content-container">
+
+        <!-- ================================================================
+             SECTION 1: HERO
+             ================================================================ -->
+        <section class="section hero-section" id="home">
+          <!-- Status Pill -->
+          <div class="hero-status-pill">
+            <span class="status-dot-pulse"></span>
+            <span>4+ Years Experience • Open to New Opportunities</span>
+          </div>
+
+          <!-- Greeting & Title -->
+          <p class="hero-greeting">Hello, I am</p>
+          <h2 class="hero-title">
+            <span class="hero-title-accent">Pravin Kamble</span>
+          </h2>
+
+          <div class="hero-typewriter-wrapper">
+            <span class="hero-typewriter-prefix">I am a </span>
+            <span class="typewriter-text" id="typewriterText"></span>
+            <span class="cursor-blink">|</span>
+          </div>
+
+          <p class="hero-description">
+            Java Full Stack Developer & DevOps Engineer with 4+ years of expertise designing and architecting scalable enterprise financial technology applications using <strong>Java, Spring Boot, AWS, and DevOps practices</strong>. Proven track record in building cloud-native distributed microservices, automated CI/CD pipelines, and high-availability production environments.
+          </p>
+
+          <!-- Action Buttons -->
+          <div class="hero-actions">
+            <!-- Download Resume PDF -->
+            <a href="assets/JAVA_Dev_Pravin_Kamble_8286189486.pdf" target="_blank" rel="noopener noreferrer" download="JAVA_Dev_Pravin_Kamble_8286189486.pdf" class="btn btn-primary">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              <span>Download Resume</span>
+            </a>
+            <a href="#projects" class="btn btn-secondary">
+              <span>View Projects</span>
+              <svg viewBox="0 0 24 24" fill="none"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+            <a href="https://github.com/Pravin-Kamble" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+              <span>GitHub Profile</span>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <span>Get In Touch</span>
+              <svg viewBox="0 0 24 24" fill="none"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+            </a>
+          </div>
+
+          <!-- Highlight Stats Grid -->
+          <div class="stats-grid">
+            <div class="stat-card">
+              <div class="stat-number">4+</div>
+              <div class="stat-label">Years of Experience</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number">12+</div>
+              <div class="stat-label">AWS Services Deployed</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number">M.Tech</div>
+              <div class="stat-label">VJTI, Mumbai (2022)</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number">1st</div>
+              <div class="stat-label">CSI TechNext National Award</div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ================================================================
+             SECTION 2: ABOUT & CORE FOCUS
+             ================================================================ -->
+        <section class="section" id="about">
+          <div class="section-header">
+            <div class="section-tag">
+              <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+              <span>Summary & Overview</span>
+            </div>
+            <h2 class="section-title">About Me</h2>
+            <p class="section-subtitle">Specialized in Enterprise Financial Technology, Cloud-Native Distributed Systems, and DevOps Engineering.</p>
+          </div>
+
+          <div class="about-grid">
+            <div class="about-text-block">
+              <p>
+                I am a <strong>Java Full Stack Developer and DevOps Engineer</strong> currently serving as <strong>Assistant Manager – Technology</strong> at <strong>National e-Repository Limited (NeRL)</strong> in Mumbai. With an <strong>M.Tech in Computer Engineering from VJTI Mumbai</strong>, I combine deep theoretical computer science fundamentals with robust production experience.
+              </p>
+              <p>
+                My primary focus is architecting secure, scalable financial platforms, automating deployment lifecycles via Jenkins CI/CD, and managing high-throughput services on Amazon Web Services (AWS) across RHEL and Amazon Linux environments. I hold a strong passion for microservice decoupling, low-latency API communication, and zero-downtime operations.
+              </p>
+            </div>
+
+            <!-- 4 Core Focus Cards -->
+            <div class="focus-cards-grid">
+              <div class="focus-card">
+                <div class="focus-icon-box">
+                  <svg viewBox="0 0 24 24" fill="none"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+                </div>
+                <h3 class="focus-title">Enterprise Java & Spring Boot</h3>
+                <p class="focus-desc">Developing resilient microservices, transactional REST APIs, Spring MVC, and Hibernate data tiers integrated with enterprise Oracle databases.</p>
+              </div>
+
+              <div class="focus-card">
+                <div class="focus-icon-box">
+                  <svg viewBox="0 0 24 24" fill="none"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path></svg>
+                </div>
+                <h3 class="focus-title">AWS Cloud Architecture</h3>
+                <p class="focus-desc">Hands-on architecture with EC2, S3, IAM, SES, Lambda, CloudWatch, SNS, EventBridge, VPC, RDS, API Gateway, and KMS for secure financial workflows.</p>
+              </div>
+
+              <div class="focus-card">
+                <div class="focus-icon-box">
+                  <svg viewBox="0 0 24 24" fill="none"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                </div>
+                <h3 class="focus-title">DevOps & CI/CD Automation</h3>
+                <p class="focus-desc">Building automated build/test/deploy pipelines via Jenkins to reduce operational overhead and ensure fast, reliable releases across RHEL & Amazon Linux 2023.</p>
+              </div>
+
+              <div class="focus-card">
+                <div class="focus-icon-box">
+                  <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10"></circle><path d="M8 14s1.5 2 4 2 4-2 4-2"></path><line x1="9" y1="9" x2="9.01" y2="9"></line><line x1="15" y1="9" x2="15.01" y2="9"></line></svg>
+                </div>
+                <h3 class="focus-title">Applied AI & IoT Research</h3>
+                <p class="focus-desc">Published research author in IJITEE on Convolutional Neural Networks (CNN) for object detection; experienced in Python, Raspberry Pi, and embedded systems.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ================================================================
+             SECTION 3: EXPERIENCE TIMELINE
+             ================================================================ -->
+        <section class="section" id="experience">
+          <div class="section-header">
+            <div class="section-tag">
+              <svg viewBox="0 0 24 24" fill="none"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+              <span>Work History</span>
+            </div>
+            <h2 class="section-title">Work Experience</h2>
+            <p class="section-subtitle">Proven track record in enterprise financial engineering and production cloud reliability.</p>
+          </div>
+
+          <div class="timeline">
+            <!-- Experience Item 1 -->
+            <div class="timeline-item">
+              <span class="timeline-dot"></span>
+              <div class="timeline-card">
+                <div class="timeline-header">
+                  <div>
+                    <h3 class="timeline-role">Asst. Manager – Technology (Java & DevOps)</h3>
+                    <span class="timeline-company">National e-Repository Limited (NeRL) • Mumbai, India</span>
+                  </div>
+                  <span class="timeline-period">Sep 2022 — Present</span>
+                </div>
+                <div class="timeline-body">
+                  <ul>
+                    <li>Designed and developed scalable enterprise financial applications using <strong>Java, Spring Boot, and RESTful microservices</strong> in AWS cloud environments.</li>
+                    <li>Collaborated on architecture and integration design for cloud-native distributed systems supporting secure financial workflows and transactional processing.</li>
+                    <li>Developed microservices-based architecture integrated with <strong>AWS API Gateway</strong> for scalable, secure inter-service communication.</li>
+                    <li>Integrated <strong>AWS SES</strong> for critical transactional emails and <strong>AWS Lambda</strong> for event-driven serverless function execution.</li>
+                    <li>Implemented automated CI/CD pipelines using <strong>Jenkins</strong> to streamline deployments, enhance release reliability, and reduce operational overhead.</li>
+                    <li>Managed application deployments on <strong>Red Hat Enterprise Linux (RHEL)</strong> and <strong>Amazon Linux 2023</strong> production environments.</li>
+                    <li>Actively monitored and resolved production and UAT environment issues, ensuring system stability, compliance, and maximum uptime.</li>
+                    <li>Architected and managed AWS infrastructure: <strong>EC2, S3, IAM, SES, Lambda, CloudWatch, SNS, EventBridge, VPC, RDS, API Gateway, and KMS</strong>.</li>
+                  </ul>
+                  <div class="timeline-tags">
+                    <span class="tag-pill">Java</span>
+                    <span class="tag-pill">Spring Boot</span>
+                    <span class="tag-pill">AWS (12+ Services)</span>
+                    <span class="tag-pill">Microservices</span>
+                    <span class="tag-pill">Jenkins CI/CD</span>
+                    <span class="tag-pill">RHEL / Linux</span>
+                    <span class="tag-pill">Oracle DB</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Experience Item 2 -->
+            <div class="timeline-item">
+              <span class="timeline-dot"></span>
+              <div class="timeline-card">
+                <div class="timeline-header">
+                  <div>
+                    <h3 class="timeline-role">Java Developer Intern</h3>
+                    <span class="timeline-company">National e-Repository Limited (NeRL) • Mumbai, India</span>
+                  </div>
+                  <span class="timeline-period">Jan 2022 — Sep 2022</span>
+                </div>
+                <div class="timeline-body">
+                  <ul>
+                    <li>Assisted in designing, developing, and unit testing core Java-based application modules under senior developer guidance.</li>
+                    <li>Gained hands-on production experience with <strong>Spring Boot, Maven build tooling, and Oracle Database integration</strong>.</li>
+                    <li>Contributed to rapid bug resolution, performance benchmarking, and participated in rigorous peer code reviews.</li>
+                  </ul>
+                  <div class="timeline-tags">
+                    <span class="tag-pill">Java</span>
+                    <span class="tag-pill">Spring Boot</span>
+                    <span class="tag-pill">Maven</span>
+                    <span class="tag-pill">Oracle Database</span>
+                    <span class="tag-pill">REST APIs</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ================================================================
+             SECTION 4: FEATURED PROJECTS
+             ================================================================ -->
+        <section class="section" id="projects">
+          <div class="section-header">
+            <div class="section-tag">
+              <svg viewBox="0 0 24 24" fill="none"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+              <span>Portfolio Showcase</span>
+            </div>
+            <h2 class="section-title">Projects Undertaken</h2>
+            <p class="section-subtitle">Enterprise cloud systems, machine learning research, and IoT implementations.</p>
+          </div>
+
+          <!-- Filter Category Tabs -->
+          <div class="projects-filter-bar">
+            <button class="filter-btn active" data-filter="all">All Projects</button>
+            <button class="filter-btn" data-filter="enterprise">Enterprise & Cloud</button>
+            <button class="filter-btn" data-filter="ai">AI & Deep Learning</button>
+            <button class="filter-btn" data-filter="iot">IoT & Mobile</button>
+          </div>
+
+          <!-- Project Cards Grid -->
+          <div class="projects-grid">
+            <!-- Project 1: Enterprise Financial Microservices -->
+            <article class="project-card" data-category="enterprise">
+              <div class="project-img-wrapper">
+                <img src="assets/images/project-2.svg" alt="Financial Microservices" class="project-img" loading="lazy">
+                <span class="project-category-badge">Enterprise / AWS</span>
+              </div>
+              <div class="project-body">
+                <h3 class="project-title">Financial Microservices Platform</h3>
+                <p class="project-desc">High-reliability financial application backend built with Java, Spring Boot, and AWS API Gateway for secure transactional processing.</p>
+                <div class="project-stack">
+                  <span class="project-stack-badge">Java</span>
+                  <span class="project-stack-badge">Spring Boot</span>
+                  <span class="project-stack-badge">AWS API Gateway</span>
+                  <span class="project-stack-badge">Oracle DB</span>
+                </div>
+                <div class="project-links">
+                  <button class="btn-quick-view" data-project="fin-microservices">
+                    <span>Quick View</span>
+                    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                  </button>
+                  <a href="https://github.com/Pravin-Kamble" target="_blank" rel="noopener noreferrer" class="project-action-link">
+                    <svg viewBox="0 0 24 24" fill="none"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                    <span>GitHub</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 2: CI/CD & Cloud Infrastructure Automation -->
+            <article class="project-card" data-category="enterprise">
+              <div class="project-img-wrapper">
+                <img src="assets/images/project-6.svg" alt="Automated CI/CD Pipeline" class="project-img" loading="lazy">
+                <span class="project-category-badge">DevOps / CI/CD</span>
+              </div>
+              <div class="project-body">
+                <h3 class="project-title">Automated CI/CD Deployment Engine</h3>
+                <p class="project-desc">Jenkins automated build and deployment pipeline streamlining software delivery across RHEL and Amazon Linux 2023 instances.</p>
+                <div class="project-stack">
+                  <span class="project-stack-badge">Jenkins</span>
+                  <span class="project-stack-badge">AWS EC2</span>
+                  <span class="project-stack-badge">RHEL</span>
+                  <span class="project-stack-badge">SVN / Git</span>
+                </div>
+                <div class="project-links">
+                  <button class="btn-quick-view" data-project="cicd-pipeline">
+                    <span>Quick View</span>
+                    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                  </button>
+                  <a href="https://github.com/Pravin-Kamble" target="_blank" rel="noopener noreferrer" class="project-action-link">
+                    <svg viewBox="0 0 24 24" fill="none"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                    <span>GitHub</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 3: Object Detection CNN Research -->
+            <article class="project-card" data-category="ai">
+              <div class="project-img-wrapper">
+                <img src="assets/images/project-1.svg" alt="CNN Object Detection" class="project-img" loading="lazy">
+                <span class="project-category-badge">Research / CNN</span>
+              </div>
+              <div class="project-body">
+                <h3 class="project-title">CNN Object Detection & Nutrition Analysis</h3>
+                <p class="project-desc">Convolutional Neural Network system for automated fruit recognition and nutritional estimation. Published research paper in IJITEE.</p>
+                <div class="project-stack">
+                  <span class="project-stack-badge">Python</span>
+                  <span class="project-stack-badge">CNN</span>
+                  <span class="project-stack-badge">OpenCV</span>
+                  <span class="project-stack-badge">IJITEE</span>
+                </div>
+                <div class="project-links">
+                  <button class="btn-quick-view" data-project="cnn-detection">
+                    <span>Quick View</span>
+                    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                  </button>
+                  <a href="https://github.com/Pravin-Kamble" target="_blank" rel="noopener noreferrer" class="project-action-link">
+                    <svg viewBox="0 0 24 24" fill="none"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                    <span>GitHub</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 4: Serverless Event & Notification Pipeline -->
+            <article class="project-card" data-category="enterprise">
+              <div class="project-img-wrapper">
+                <img src="assets/images/project-3.svg" alt="Serverless Event Pipeline" class="project-img" loading="lazy">
+                <span class="project-category-badge">AWS Serverless</span>
+              </div>
+              <div class="project-body">
+                <h3 class="project-title">Serverless Event & Notification Architecture</h3>
+                <p class="project-desc">Event-driven transactional messaging and asynchronous computing using AWS Lambda, SES, SNS, EventBridge, and CloudWatch.</p>
+                <div class="project-stack">
+                  <span class="project-stack-badge">AWS Lambda</span>
+                  <span class="project-stack-badge">AWS SES</span>
+                  <span class="project-stack-badge">EventBridge</span>
+                  <span class="project-stack-badge">SNS</span>
+                </div>
+                <div class="project-links">
+                  <button class="btn-quick-view" data-project="serverless-events">
+                    <span>Quick View</span>
+                    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                  </button>
+                  <a href="https://github.com/Pravin-Kamble" target="_blank" rel="noopener noreferrer" class="project-action-link">
+                    <svg viewBox="0 0 24 24" fill="none"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                    <span>GitHub</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 5: Smart Noticeboard (Raspberry Pi) -->
+            <article class="project-card" data-category="iot">
+              <div class="project-img-wrapper">
+                <img src="assets/images/project-4.svg" alt="Smart Noticeboard" class="project-img" loading="lazy">
+                <span class="project-category-badge">IoT / Hardware</span>
+              </div>
+              <div class="project-body">
+                <h3 class="project-title">Smart Noticeboard via Raspberry Pi</h3>
+                <p class="project-desc">Connected wireless information display utilizing Raspberry Pi, providing real-time multi-tenant notice broadcasting and remote updates.</p>
+                <div class="project-stack">
+                  <span class="project-stack-badge">Raspberry Pi</span>
+                  <span class="project-stack-badge">Python</span>
+                  <span class="project-stack-badge">Networking</span>
+                  <span class="project-stack-badge">Linux</span>
+                </div>
+                <div class="project-links">
+                  <button class="btn-quick-view" data-project="smart-noticeboard">
+                    <span>Quick View</span>
+                    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                  </button>
+                  <a href="https://github.com/Pravin-Kamble" target="_blank" rel="noopener noreferrer" class="project-action-link">
+                    <svg viewBox="0 0 24 24" fill="none"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                    <span>GitHub</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 6: Disaster Management Android App -->
+            <article class="project-card" data-category="iot">
+              <div class="project-img-wrapper">
+                <img src="assets/images/project-5.svg" alt="Disaster Management App" class="project-img" loading="lazy">
+                <span class="project-category-badge">Android / Mobile</span>
+              </div>
+              <div class="project-body">
+                <h3 class="project-title">Disaster Management Android Application</h3>
+                <p class="project-desc">Emergency coordination and disaster relief mobile app offering real-time SOS alerts, incident mapping, and emergency helpline routing.</p>
+                <div class="project-stack">
+                  <span class="project-stack-badge">Java</span>
+                  <span class="project-stack-badge">Android Studio</span>
+                  <span class="project-stack-badge">SQLite</span>
+                  <span class="project-stack-badge">GPS/Maps</span>
+                </div>
+                <div class="project-links">
+                  <button class="btn-quick-view" data-project="disaster-app">
+                    <span>Quick View</span>
+                    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                  </button>
+                  <a href="https://github.com/Pravin-Kamble" target="_blank" rel="noopener noreferrer" class="project-action-link">
+                    <svg viewBox="0 0 24 24" fill="none"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                    <span>GitHub</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- ================================================================
+             SECTION 5: SKILLS MATRIX
+             ================================================================ -->
+        <section class="section" id="skills">
+          <div class="section-header">
+            <div class="section-tag">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+              <span>Technical Skills</span>
+            </div>
+            <h2 class="section-title">Technical Expertise</h2>
+            <p class="section-subtitle">Core proficiencies in Java enterprise architecture, AWS cloud services, and DevOps toolchains.</p>
+          </div>
+
+          <div class="skills-container">
+            <!-- Category 1: Languages & Core Backend -->
+            <div class="skills-category-group">
+              <h3 class="skills-category-title">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                <span>Programming Languages</span>
+              </h3>
+              <div class="skills-badges-wrap">
+                <div class="skill-pill-card"><span>Java (Core & Advanced)</span></div>
+                <div class="skill-pill-card"><span>Python</span></div>
+                <div class="skill-pill-card"><span>SQL</span></div>
+                <div class="skill-pill-card"><span>C</span></div>
+                <div class="skill-pill-card"><span>HTML / CSS</span></div>
+                <div class="skill-pill-card"><span>Bash / Shell</span></div>
+              </div>
+            </div>
+
+            <!-- Category 2: Frameworks & Architecture -->
+            <div class="skills-category-group">
+              <h3 class="skills-category-title">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
+                <span>Frameworks & Architecture</span>
+              </h3>
+              <div class="skills-badges-wrap">
+                <div class="skill-pill-card"><span>Spring Boot</span></div>
+                <div class="skill-pill-card"><span>Spring MVC</span></div>
+                <div class="skill-pill-card"><span>Hibernate ORM</span></div>
+                <div class="skill-pill-card"><span>RESTful APIs</span></div>
+                <div class="skill-pill-card"><span>Microservices Architecture</span></div>
+                <div class="skill-pill-card"><span>Maven</span></div>
+                <div class="skill-pill-card"><span>Oracle Database</span></div>
+                <div class="skill-pill-card"><span>API Gateway Design</span></div>
+              </div>
+            </div>
+
+            <!-- Category 3: Cloud AWS Services -->
+            <div class="skills-category-group">
+              <h3 class="skills-category-title">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path></svg>
+                <span>Amazon Web Services (AWS)</span>
+              </h3>
+              <div class="skills-badges-wrap">
+                <div class="skill-pill-card"><span>Amazon EC2</span></div>
+                <div class="skill-pill-card"><span>Amazon S3</span></div>
+                <div class="skill-pill-card"><span>AWS IAM</span></div>
+                <div class="skill-pill-card"><span>AWS Lambda</span></div>
+                <div class="skill-pill-card"><span>Amazon SES</span></div>
+                <div class="skill-pill-card"><span>Amazon SNS</span></div>
+                <div class="skill-pill-card"><span>AWS EventBridge</span></div>
+                <div class="skill-pill-card"><span>Amazon CloudWatch</span></div>
+                <div class="skill-pill-card"><span>Amazon VPC</span></div>
+                <div class="skill-pill-card"><span>Amazon RDS</span></div>
+                <div class="skill-pill-card"><span>AWS API Gateway</span></div>
+                <div class="skill-pill-card"><span>AWS KMS</span></div>
+              </div>
+            </div>
+
+            <!-- Category 4: DevOps, OS & Tooling -->
+            <div class="skills-category-group">
+              <h3 class="skills-category-title">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+                <span>DevOps, OS & Development Tools</span>
+              </h3>
+              <div class="skills-badges-wrap">
+                <div class="skill-pill-card"><span>Jenkins CI/CD</span></div>
+                <div class="skill-pill-card"><span>SVN & Git</span></div>
+                <div class="skill-pill-card"><span>Red Hat Enterprise Linux (RHEL)</span></div>
+                <div class="skill-pill-card"><span>Amazon Linux 2023</span></div>
+                <div class="skill-pill-card"><span>Eclipse & VS Code</span></div>
+                <div class="skill-pill-card"><span>PyCharm & NetBeans</span></div>
+                <div class="skill-pill-card"><span>Android Studio</span></div>
+                <div class="skill-pill-card"><span>Matlab</span></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ================================================================
+             SECTION 6: EDUCATION
+             ================================================================ -->
+        <section class="section" id="education">
+          <div class="section-header">
+            <div class="section-tag">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+              <span>Academic Background</span>
+            </div>
+            <h2 class="section-title">Education</h2>
+            <p class="section-subtitle">Academic qualifications in Computer Engineering and Information Technology.</p>
+          </div>
+
+          <div class="edu-cert-grid">
+            <!-- Degree 1 -->
+            <div class="credential-card">
+              <h4 class="credential-degree">M.Tech in Computer Engineering</h4>
+              <div class="credential-institution">Veermata Jijabai Technological Institute (VJTI), Mumbai</div>
+              <div class="credential-meta">
+                <span>Year: 2022</span>
+                <span>Postgraduate Degree</span>
+              </div>
+              <p class="credential-details">
+                Advanced studies in Computer Engineering, distributed systems, deep learning, and advanced algorithms at one of India's premier engineering institutions.
+              </p>
+            </div>
+
+            <!-- Degree 2 -->
+            <div class="credential-card">
+              <h4 class="credential-degree">B.E. in Information Technology</h4>
+              <div class="credential-institution">University of Mumbai</div>
+              <div class="credential-meta">
+                <span>Year: 2019</span>
+                <span>CGPA: 6.77</span>
+              </div>
+              <p class="credential-details">
+                Core curriculum in Data Structures, Object-Oriented Programming, Database Management, Operating Systems, and Software Engineering.
+              </p>
+            </div>
+
+            <!-- Degree 3 -->
+            <div class="credential-card">
+              <h4 class="credential-degree">Diploma in Computer Technology</h4>
+              <div class="credential-institution">Maharashtra State Board of Technical Education (MSBTE)</div>
+              <div class="credential-meta">
+                <span>Year: 2016</span>
+                <span>Score: 60.06%</span>
+              </div>
+              <p class="credential-details">
+                Foundations in computer programming, computer hardware, network fundamentals, and digital electronics.
+              </p>
+            </div>
+
+            <!-- Degree 4 -->
+            <div class="credential-card">
+              <h4 class="credential-degree">Secondary School Certificate (SSC - Class X)</h4>
+              <div class="credential-institution">Maharashtra State Board</div>
+              <div class="credential-meta">
+                <span>Year: 2011</span>
+                <span>Score: 67.20%</span>
+              </div>
+              <p class="credential-details">
+                Secondary school education with high emphasis on Science and Mathematics.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- ================================================================
+             SECTION 7: ACHIEVEMENTS & RESEARCH
+             ================================================================ -->
+        <section class="section" id="achievements">
+          <div class="section-header">
+            <div class="section-tag">
+              <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+              <span>Recognition & Publications</span>
+            </div>
+            <h2 class="section-title">Achievements & Activities</h2>
+            <p class="section-subtitle">Hackathons, published research papers, and technical leadership.</p>
+          </div>
+
+          <div class="edu-cert-grid">
+            <!-- Competitions & Awards -->
+            <div>
+              <h3 class="edu-cert-column-title">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+                <span>Honors & Competitions</span>
+              </h3>
+              <div class="credential-cards">
+                <div class="credential-card">
+                  <h4 class="credential-degree">🥇 1st Place — CSI's TechNext India 2018</h4>
+                  <div class="credential-institution">Computer Society of India (CSI)</div>
+                  <p class="credential-details">
+                    Secured 1st Prize in the prestigious national-level project competition organized by CSI TechNext India for innovative software engineering.
+                  </p>
+                </div>
+
+                <div class="credential-card">
+                  <h4 class="credential-degree">🥉 3rd Place — iCarus Technical Festival 2018</h4>
+                  <div class="credential-institution">Rajiv Gandhi Institute of Technology, Mumbai</div>
+                  <p class="credential-details">
+                    Awarded 3rd place in the competitive project showcase during the annual iCarus technical symposium.
+                  </p>
+                </div>
+
+                <div class="credential-card">
+                  <h4 class="credential-degree">🏆 Finalist — SKYHACK 2018</h4>
+                  <div class="credential-institution">AIC@36Inc • Raipur, Chhattisgarh</div>
+                  <p class="credential-details">
+                    Recognized as a national finalist in the SKYHACK hackathon organized by Atal Incubation Centre.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Publications & Certifications -->
+            <div>
+              <h3 class="edu-cert-column-title">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                <span>Research & Leadership</span>
+              </h3>
+              <div class="credential-cards">
+                <div class="credential-card">
+                  <h4 class="credential-degree">📄 Published Research Paper</h4>
+                  <div class="credential-institution">IJITEE (International Journal)</div>
+                  <p class="credential-details">
+                    <strong>"Object Detection using Convolutional Neural Network in the Application of Supplementary Nutrition Value of Fruits"</strong> published in the International Journal of Innovative Technology and Exploring Engineering.
+                  </p>
+                </div>
+
+                <div class="credential-card">
+                  <h4 class="credential-degree">🎓 Digital Image Processing Certification</h4>
+                  <div class="credential-institution">Great Learning</div>
+                  <p class="credential-details">
+                    Completed specialized coursework in spatial filtering, frequency domain image enhancement, and computer vision techniques.
+                  </p>
+                </div>
+
+                <div class="credential-card">
+                  <h4 class="credential-degree">🌟 Leaders of Tomorrow Leadership Program</h4>
+                  <div class="credential-institution">Dr. P N Singh Foundation</div>
+                  <p class="credential-details">
+                    Completed a comprehensive 1-year leadership and professional development program.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ================================================================
+             SECTION 8: CONTACT
+             ================================================================ -->
+        <section class="section" id="contact">
+          <div class="section-header">
+            <div class="section-tag">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <span>Get in Touch</span>
+            </div>
+            <h2 class="section-title">Let's Connect</h2>
+            <p class="section-subtitle">Interested in collaborating or discussing senior Java, AWS, or DevOps opportunities? Reach out!</p>
+          </div>
+
+          <div class="contact-grid">
+            <!-- Left: Direct Details -->
+            <div class="contact-info-cards">
+              <div class="contact-method-card">
+                <div class="contact-icon-box">
+                  <svg viewBox="0 0 24 24" fill="none"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                </div>
+                <div class="contact-method-text">
+                  <div class="contact-label">Email</div>
+                  <div class="contact-val">pravinkamble704@gmail.com</div>
+                </div>
+                <button class="btn-copy" id="copyEmailBtn" data-email="pravinkamble704@gmail.com" aria-label="Copy Email">
+                  <svg viewBox="0 0 24 24" fill="none"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                  <span>Copy</span>
+                </button>
+              </div>
+
+              <div class="contact-method-card">
+                <div class="contact-icon-box">
+                  <svg viewBox="0 0 24 24" fill="none"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                </div>
+                <div class="contact-method-text">
+                  <div class="contact-label">Phone</div>
+                  <div class="contact-val">+91 82861 89486</div>
+                </div>
+              </div>
+
+              <div class="contact-method-card">
+                <div class="contact-icon-box">
+                  <svg viewBox="0 0 24 24" fill="none"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                </div>
+                <div class="contact-method-text">
+                  <div class="contact-label">Location</div>
+                  <div class="contact-val">Mumbai, India</div>
+                </div>
+              </div>
+
+              <div class="contact-method-card">
+                <div class="contact-icon-box">
+                  <svg viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                </div>
+                <div class="contact-method-text">
+                  <div class="contact-label">LinkedIn</div>
+                  <div class="contact-val"><a href="https://linkedin.com/in/pravin-k-kamble" target="_blank" rel="noopener noreferrer" style="color: var(--accent-cyan);">linkedin.com/in/pravin-k-kamble</a></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right: Interactive Form -->
+            <div class="contact-form-card">
+              <form id="contactForm">
+                <div class="form-group">
+                  <label class="form-label" for="formName">Your Name</label>
+                  <input type="text" id="formName" class="form-input" placeholder="e.g. John Doe" required>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="formEmail">Email Address</label>
+                  <input type="email" id="formEmail" class="form-input" placeholder="john@example.com" required>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="formSubject">Subject</label>
+                  <input type="text" id="formSubject" class="form-input" placeholder="Java / DevOps Opportunity" required>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="formMessage">Message</label>
+                  <textarea id="formMessage" class="form-textarea" placeholder="Hi Pravin, I reviewed your portfolio and would like to discuss..." required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">
+                  <span>Send Message</span>
+                  <svg viewBox="0 0 24 24" fill="none"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                </button>
+              </form>
+            </div>
+          </div>
+        </section>
+
+        <!-- ================================================================
+             FOOTER
+             ================================================================ -->
+        <footer class="footer">
+          <div>
+            <p>&copy; 2026 Pravin Kamble. Built from scratch with pure HTML, CSS & JavaScript.</p>
+            <p style="font-size: 0.8rem; margin-top: 0.25rem;">Hosted on GitHub Pages • Mumbai, India</p>
+          </div>
+          <div class="footer-links">
+            <a href="#home" class="footer-link">Back to Top ↑</a>
+            <a href="https://linkedin.com/in/pravin-k-kamble" target="_blank" rel="noopener noreferrer" class="footer-link">LinkedIn</a>
+            <a href="https://github.com/Pravin-Kamble" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub</a>
+          </div>
+        </footer>
+
+      </div>
+    </main>
+  </div>
+
+  <!-- ====================================================================
+       PROJECT QUICK-VIEW MODAL
+       ==================================================================== -->
+  <div class="modal-backdrop" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-container">
+      <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close Project Modal">
+        <svg viewBox="0 0 24 24" fill="none"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+      <div class="modal-img-wrapper">
+        <img src="" alt="" id="modalImg" class="modal-img">
+      </div>
+      <div class="modal-body">
+        <div class="modal-category" id="modalCategory"></div>
+        <h3 class="modal-title" id="modalTitle"></h3>
+        <p class="modal-desc" id="modalDesc"></p>
+        
+        <h4 class="modal-features-title">Technical Highlights</h4>
+        <ul class="modal-features-list" id="modalFeatures"></ul>
+
+        <div class="modal-footer">
+          <a href="https://github.com/Pravin-Kamble" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" id="modalRepoLink">
+            <span>View on GitHub</span>
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+          </a>
+          <a href="mailto:pravinkamble704@gmail.com" class="btn btn-primary">
+            <span>Inquire About Project</span>
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ====================================================================
+       TOAST NOTIFICATION (COPY / SUCCESS FEEDBACK)
+       ==================================================================== -->
+  <div class="toast-notification" id="toastNotification" role="alert" aria-live="polite">
+    <svg class="toast-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+    <span id="toastMessage">Email copied to clipboard!</span>
+  </div>
+
+  <!-- Main JavaScript File -->
+  <script src="js/main.js"></script>
+</body>
+</html>

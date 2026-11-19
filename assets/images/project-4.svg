@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="100%" height="100%">
+  <defs>
+    <linearGradient id="p4Bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e1b4b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="p4Cyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06b6d4" />
+      <stop offset="100%" stop-color="#3b82f6" />
+    </linearGradient>
+  </defs>
+  <rect width="600" height="360" rx="12" fill="url(#p4Bg)"/>
+  <!-- Browser top -->
+  <rect x="25" y="20" width="550" height="32" rx="6" fill="#1e293b"/>
+  <circle cx="45" cy="36" r="5" fill="#ef4444"/>
+  <circle cx="63" cy="36" r="5" fill="#f59e0b"/>
+  <circle cx="81" cy="36" r="5" fill="#10b981"/>
+  <rect x="110" y="27" width="260" height="18" rx="4" fill="#0f172a"/>
+  <text x="125" y="40" fill="#38bdf8" font-family="monospace" font-size="11">https://app.nexus-platform.io</text>
+
+  <!-- Left Sidebar -->
+  <rect x="25" y="60" width="100" height="275" fill="#0f172a"/>
+  <rect x="37" y="80" width="76" height="12" rx="3" fill="#38bdf8"/>
+  <rect x="37" y="105" width="60" height="8" rx="2" fill="#475569"/>
+  <rect x="37" y="125" width="65" height="8" rx="2" fill="#475569"/>
+  <rect x="37" y="145" width="55" height="8" rx="2" fill="#475569"/>
+
+  <!-- Main Workspace -->
+  <rect x="135" y="65" width="435" height="110" rx="8" fill="#1e293b"/>
+  <text x="155" y="95" fill="#f1f5f9" font-family="sans-serif" font-weight="bold" font-size="16">Global Project Hub</text>
+  <text x="155" y="115" fill="#94a3b8" font-family="sans-serif" font-size="12">Next.js 15 • TypeScript • Tailwind • Prisma • tRPC</text>
+  <rect x="155" y="135" width="110" height="26" rx="6" fill="url(#p4Cyan)"/>
+  <text x="175" y="152" fill="#ffffff" font-family="sans-serif" font-weight="bold" font-size="11">Launch Demo</text>
+
+  <!-- 3 Mini Cards -->
+  <rect x="135" y="190" width="135" height="145" rx="6" fill="#1e293b"/>
+  <circle cx="160" cy="215" r="14" fill="#3b82f6"/>
+  <rect x="150" y="240" width="90" height="10" rx="2" fill="#cbd5e1"/>
+  <rect x="150" y="260" width="70" height="8" rx="2" fill="#64748b"/>
+
+  <rect x="285" y="190" width="135" height="145" rx="6" fill="#1e293b"/>
+  <circle cx="310" cy="215" r="14" fill="#10b981"/>
+  <rect x="300" y="240" width="90" height="10" rx="2" fill="#cbd5e1"/>
+  <rect x="300" y="260" width="70" height="8" rx="2" fill="#64748b"/>
+
+  <rect x="435" y="190" width="135" height="145" rx="6" fill="#1e293b"/>
+  <circle cx="460" cy="215" r="14" fill="#8b5cf6"/>
+  <rect x="450" y="240" width="90" height="10" rx="2" fill="#cbd5e1"/>
+  <rect x="450" y="260" width="70" height="8" rx="2" fill="#64748b"/>
+</svg>
